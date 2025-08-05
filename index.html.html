@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZyVibe - Automate Your Business in 60 Seconds</title>
+    <meta name="description" content="Transform your business with AI-powered automation tools in 60 seconds. Get AI assistants, automated websites, phone agents, WhatsApp messaging, and complete business automation suite. Start your free trial today!">
+    <meta name="keywords" content="AI automation, business automation, AI assistant, automated websites, phone agents, WhatsApp automation, social media automation, email automation, SEO optimization">
+    <meta name="author" content="ZyVibe">
+    <meta property="og:title" content="ZyVibe - Automate Your Business in 60 Seconds">
+    <meta property="og:description" content="Transform your business with AI-powered automation tools. 24/7 AI assistants, automated websites, and complete business automation suite.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://zyvibe.com">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="ZyVibe - AI Business Automation">
+    <meta name="twitter:description" content="Automate your business in 60 seconds with AI-powered tools.">
+    <link rel="canonical" href="https://zyvibe.com">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🤖%3C/text%3E%3C/svg%3E">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --electric-pink: #FF006E;
+            --cyan: #00F5FF;
+            --lime: #B4FF00;
+            --charcoal: #0D0D0D;
+            --dark-gray: #1A1A1A;
+            --white: #FFFFFF;
+            --glass: rgba(255, 255, 255, 0.1);
+        }
+        *{margin:0;padding:0;box-sizing:border-box}
+        body{font-family:'JetBrains Mono',monospace;background:var(--charcoal);color:var(--white);overflow-x:hidden;cursor:crosshair}
+        .display-font{font-family:'Space Grotesk',sans-serif;font-weight:700;letter-spacing:-0.02em}
+        .chromatic{position:relative}
+        .chromatic::before,.chromatic::after{content:attr(data-text);position:absolute;top:0;left:0;width:100%;height:100%;z-index:-1}
+        .chromatic::before{color:var(--electric-pink);transform:translate(-2px,-2px)}
+        .chromatic::after{color:var(--cyan);transform:translate(2px,2px)}
+        .glass-card{background:linear-gradient(135deg,rgba(255,255,255,.1),rgba(255,255,255,.05));backdrop-filter:blur(20px);border:1px solid rgba(255,255,255,.2);border-radius:0;position:relative;overflow:hidden}
+        .glass-card::before{content:'';position:absolute;top:-2px;left:-2px;right:-2px;bottom:-2px;background:linear-gradient(45deg,var(--electric-pink),var(--cyan),var(--lime),var(--electric-pink));z-index:-1;filter:blur(3px);opacity:0;transition:opacity .3s ease}
+        .glass-card:hover::before{opacity:1}
+        .liquid-btn{background:linear-gradient(45deg,var(--electric-pink),var(--cyan));border:none;padding:1rem 2rem;color:var(--charcoal);font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:1rem;cursor:pointer;position:relative;overflow:hidden;transition:all .3s ease;text-decoration:none;display:inline-block;clip-path:polygon(0 0,100% 0,85% 100%,0 100%)}
+        .liquid-btn::before{content:'';position:absolute;top:100%;left:0;width:100%;height:100%;background:linear-gradient(45deg,var(--lime),var(--electric-pink));transition:top .3s ease}
+        .liquid-btn:hover::before{top:0}
+        .liquid-btn span{position:relative;z-index:2}
+        .icon-3d{font-size:4rem;text-shadow:4px 4px 0 var(--electric-pink),8px 8px 0 var(--cyan),12px 12px 0 var(--lime);animation:float3d 3s ease-in-out infinite}
+        @keyframes float3d{0%,100%{transform:translateY(0) rotateX(0) rotateY(0)}50%{transform:translateY(-20px) rotateX(10deg) rotateY(5deg)}}
+        .holographic{background:linear-gradient(45deg,var(--electric-pink),var(--cyan),var(--lime),var(--electric-pink));background-size:400% 400%;animation:hologram 3s ease infinite;-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+        @keyframes hologram{0%{background-position:0% 50%}50%{background-position:100% 50%}100%{background-position:0% 50%}}
+        .container{max-width:1400px;margin:0 auto;padding:0 2rem}
+        header{position:fixed;top:0;width:100%;background:rgba(13,13,13,.9);backdrop-filter:blur(20px);z-index:1000;border-bottom:2px solid var(--electric-pink)}
+        nav{display:flex;justify-content:space-between;align-items:center;padding:1rem 0}
+        .logo{font-family:'Space Grotesk',sans-serif;font-size:2rem;font-weight:700;color:var(--lime);text-decoration:none;text-transform:uppercase;letter-spacing:2px}
+        .nav-links{display:flex;list-style:none;gap:3rem}
+        .nav-links a{color:var(--white);text-decoration:none;font-weight:500;text-transform:uppercase;letter-spacing:1px;transition:all .3s ease;position:relative}
+        .nav-links a::after{content:'';position:absolute;bottom:-5px;left:0;width:0;height:3px;background:var(--cyan);transition:width .3s ease}
+        .nav-links a:hover{color:var(--cyan)}
+        .nav-links a:hover::after{width:100%}
+        .hero{min-height:100vh;display:flex;align-items:center;position:relative;overflow:hidden;padding:6rem 0}
+        .hero::before{content:'';position:absolute;top:0;left:0;right:0;bottom:0;background:radial-gradient(circle at 20% 30%,var(--electric-pink) 0%,transparent 50%),radial-gradient(circle at 80% 70%,var(--cyan) 0%,transparent 50%),radial-gradient(circle at 50% 50%,var(--lime) 0%,transparent 70%);opacity:.1;animation:pulse 4s ease-in-out infinite}
+        @keyframes pulse{0%,100%{opacity:.1}50%{opacity:.2}}
+        .hero-content{position:relative;z-index:2}
+        .hero h1{font-size:clamp(3rem,8vw,8rem);font-family:'Space Grotesk',sans-serif;font-weight:700;line-height:.9;margin-bottom:2rem;text-transform:uppercase}
+        .hero-subtitle{font-size:1.5rem;margin-bottom:3rem;color:var(--cyan);font-weight:300}
+        .glitch-text{position:relative;animation:glitch 2s infinite}
+        @keyframes glitch{0%,90%,100%{transform:translate(0)}20%{transform:translate(-2px,2px)}40%{transform:translate(-2px,-2px)}60%{transform:translate(2px,2px)}80%{transform:translate(2px,-2px)}}
+        .services{padding:8rem 0;position:relative}
+        .section-title{font-size:4rem;font-family:'Space Grotesk',sans-serif;font-weight:700;text-align:center;margin-bottom:4rem;text-transform:uppercase}
+        .services-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(350px,1fr));gap:3rem;margin-top:4rem}
+        .service-card{padding:3rem;position:relative;transition:all .3s ease;border:2px solid transparent}
+        .service-card:nth-child(odd){background:linear-gradient(135deg,var(--electric-pink),var(--cyan));color:var(--charcoal)}
+        .service-card:nth-child(even){background:linear-gradient(135deg,var(--lime),var(--electric-pink));color:var(--charcoal)}
+        .service-card:hover{transform:scale(1.05) rotate(1deg);box-shadow:10px 10px 0 var(--electric-pink),20px 20px 0 var(--cyan),30px 30px 0 var(--lime)}
+        .service-card h3{font-family:'Space Grotesk',sans-serif;font-size:1.5rem;font-weight:700;margin-bottom:1rem;text-transform:uppercase}
+        .service-card p{font-size:1rem;line-height:1.6}
+        .features{padding:8rem 0;background:var(--dark-gray);position:relative;overflow:hidden}
+        .features::before{content:'';position:absolute;top:0;left:-50%;width:200%;height:100%;background:repeating-linear-gradient(45deg,transparent,transparent 20px,rgba(180,255,0,.1) 20px,rgba(180,255,0,.1) 40px);animation:slide 20s linear infinite}
+        @keyframes slide{0%{transform:translateX(-50%)}100%{transform:translateX(0)}}
+        .features-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:2rem;position:relative;z-index:2}
+        .feature-item{padding:2rem;text-align:center;border:3px solid var(--cyan);background:var(--charcoal);transition:all .3s ease}
+        .feature-item:hover{background:var(--cyan);color:var(--charcoal);transform:translateY(-10px)}
+        .feature-item h3{font-family:'Space Grotesk',sans-serif;font-size:1.25rem;font-weight:700;margin-bottom:1rem;text-transform:uppercase}
+        .contact{padding:8rem 0;text-align:center;position:relative}
+        .contact-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:2rem;margin:4rem 0}
+        .contact-card{padding:3rem;border:3px solid var(--electric-pink);background:var(--charcoal);transition:all .3s ease}
+        .contact-card:hover{background:var(--electric-pink);color:var(--charcoal);transform:scale(1.05)}
+        footer{background:var(--dark-gray);padding:3rem 0;text-align:center;border-top:3px solid var(--lime)}
+        .chatbot-container{position:fixed;bottom:2rem;right:2rem;z-index:1001}
+        .chatbot-toggle{background:linear-gradient(45deg,var(--electric-pink),var(--cyan));color:var(--charcoal);border:none;width:80px;height:80px;font-size:2rem;cursor:pointer;transition:all .3s ease;clip-path:polygon(0 0,100% 0,85% 100%,0 100%)}
+        .chatbot-toggle:hover{transform:scale(1.1) rotate(5deg)}
+        .confetti{position:fixed;top:-10px;z-index:9999;pointer-events:none}
+        @keyframes confetti-fall{0%{transform:translateY(-100vh) rotate(0);opacity:1}100%{transform:translateY(100vh) rotate(720deg);opacity:0}}
+        @media(max-width:768px){.nav-links{display:none}.hero h1{font-size:3rem}.services-grid{grid-template-columns:1fr}}
+        .mouse-follower{position:fixed;width:20px;height:20px;background:var(--lime);border-radius:50%;pointer-events:none;z-index:9999;mix-blend-mode:difference;transition:transform .1s ease}
+    </style>
+</head>
+<body>
+    <div class="mouse-follower"></div>
+
+    <!-- Header -->
+    <header>
+        <nav class="container">
+            <a href="#" class="logo rgb-split">ZyVibe</a>
+            <ul class="nav-links">
+                <li><a href="#services">SERVICES</a></li>
+                <li><a href="#features">FEATURES</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+            </ul>
+            <a href="#trial" class="liquid-btn"><span>START TRIAL</span></a>
+        </nav>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="chromatic holographic glitch-text" data-text="AUTOMATE YOUR BUSINESS">
+                    AUTOMATE<br>YOUR<br>BUSINESS
+                </h1>
+                <p class="hero-subtitle">IN 60 SECONDS OR LESS</p>
+                <a href="#services" class="liquid-btn" onclick="createConfetti()">
+                    <span>GET STARTED NOW →</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title holographic">COMPLETE AUTOMATION SUITE</h2>
+            <div class="services-grid">
+                <div class="service-card glass-card"><div class="icon-3d">🤖</div><h3>AI ASSISTANT</h3><p>24/7 intelligent virtual assistant handling customer inquiries and routine tasks.</p></div>
+                <div class="service-card glass-card"><div class="icon-3d">🌐</div><h3>WEBSITE BUILDING</h3><p>AI-powered professional websites built in minutes, tailored to your business.</p></div>
+                <div class="service-card glass-card"><div class="icon-3d">📞</div><h3>PHONE AGENTS</h3><p>AI phone agents handling calls, orders, and customer support naturally.</p></div>
+                <div class="service-card glass-card"><div class="icon-3d">💬</div><h3>WHATSAPP MESSAGING</h3><p>Automated WhatsApp business messaging for support and marketing campaigns.</p></div>
+                <div class="service-card glass-card"><div class="icon-3d">📱</div><h3>SOCIAL MEDIA</h3><p>Automated posting, engagement tracking, and content creation across platforms.</p></div>
+                <div class="service-card glass-card"><div class="icon-3d">💳</div><h3>DIGITAL CARDS</h3><p>Modern digital business cards with QR codes and analytics tracking.</p></div>
+                <div class="service-card glass-card"><div class="icon-3d">🎨</div><h3>FLYER DESIGN</h3><p>AI-generated professional marketing materials for promotions and events.</p></div>
+                <div class="service-card glass-card"><div class="icon-3d">📧</div><h3>EMAIL AUTOMATION</h3><p>Smart email campaigns with personalization and performance analytics.</p></div>
+                <div class="service-card glass-card"><div class="icon-3d">🏢</div><h3>GOOGLE BUSINESS</h3><p>Complete Google Business Profile optimization for maximum visibility.</p></div>
+                <div class="service-card glass-card"><div class="icon-3d">🗺️</div><h3>MAPS INTEGRATION</h3><p>Enhanced Google Maps presence with reviews and location marketing.</p></div>
+                <div class="service-card glass-card"><div class="icon-3d">🔍</div><h3>SEO OPTIMIZATION</h3><p>Advanced SEO strategies to boost search rankings and organic traffic.</p></div>
+                <div class="service-card glass-card"><div class="icon-3d">📊</div><h3>META BUSINESS</h3><p>Facebook and Instagram automation with posting and ad management.</p></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section id="features" class="features">
+        <div class="container">
+            <h2 class="section-title holographic">WHY CHOOSE ZYVIBE?</h2>
+            <div class="features-grid">
+                <div class="feature-item"><div class="icon-3d">⚡</div><h3>60-SECOND SETUP</h3><p>Get automation running instantly</p></div>
+                <div class="feature-item"><div class="icon-3d">🔄</div><h3>24/7 OPERATION</h3><p>Never-sleeping AI assistants</p></div>
+                <div class="feature-item"><div class="icon-3d">💰</div><h3>COST EFFECTIVE</h3><p>Replace multiple tools with one</p></div>
+                <div class="feature-item"><div class="icon-3d">📈</div><h3>SCALABLE</h3><p>Grows with your business needs</p></div>
+                <div class="feature-item"><div class="icon-3d">🛡️</div><h3>SECURE</h3><p>Enterprise-grade data protection</p></div>
+                <div class="feature-item"><div class="icon-3d">🎯</div><h3>CUSTOMIZABLE</h3><p>Tailored to your requirements</p></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title holographic">READY TO TRANSFORM?</h2>
+            <p style="font-size:1.5rem;color:var(--cyan);margin-bottom:2rem;">START YOUR 7-DAY FREE TRIAL TODAY</p>
+            <div id="trial" class="liquid-btn" style="font-size:1.2rem;padding:1.5rem 3rem;margin:2rem"><span>🎉 LIMITED TIME: FREE TRIAL + SETUP</span></div>
+            <div class="contact-grid">
+                <div class="contact-card glass-card"><div class="icon-3d">📧</div><h3>EMAIL</h3><p>hello@zyvibe.com</p></div>
+                <div class="contact-card glass-card"><div class="icon-3d">🌐</div><h3>WEBSITE</h3><p>www.zyvibe.com</p></div>
+                <div class="contact-card glass-card"><div class="icon-3d">💬</div><h3>LIVE CHAT</h3><p>Click the button below</p></div>
+            </div>
+            <a href="#" class="liquid-btn" onclick="createConfetti()" style="font-size:1.3rem;padding:1.5rem 3rem"><span>START FREE TRIAL NOW →</span></a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 ZYVIBE. ALL RIGHTS RESERVED. | AUTOMATE YOUR BUSINESS IN 60 SECONDS</p>
+        </div>
+    </footer>
+
+    <!-- Chatbot -->
+    <div class="chatbot-container">
+        <button class="chatbot-toggle" onclick="toggleChatbot()">💬</button>
+    </div>
+
+    <script>
+        // Mouse follower
+        const mouseFollower = document.querySelector('.mouse-follower');
+        document.addEventListener('mousemove', (e) => {
+            mouseFollower.style.left = e.clientX - 10 + 'px';
+            mouseFollower.style.top = e.clientY - 10 + 'px';
+        });
+
+        // Confetti effect
+        function createConfetti() {
+            const colors = ['#FF006E', '#00F5FF', '#B4FF00'];
+            for (let i = 0; i < 100; i++) {
+                setTimeout(() => {
+                    const confetti = document.createElement('div');
+                    confetti.className = 'confetti';
+                    confetti.style.left = Math.random() * 100 + 'vw';
+                    confetti.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+                    confetti.style.width = Math.random() * 10 + 5 + 'px';
+                    confetti.style.height = confetti.style.width;
+                    confetti.style.animation = `confetti-fall ${Math.random() * 3 + 2}s linear forwards`;
+                    document.body.appendChild(confetti);
+                    setTimeout(() => confetti.remove(), 5000);
+                }, i * 20);
+            }
+        }
+
+        // Chatbot stub – clean & safe
+        function toggleChatbot() {
+            alert('Chatbot integration coming soon! Contact us at hello@zyvibe.com for immediate assistance.');
+        }
+
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(a => {
+            a.addEventListener('click', e => {
+                e.preventDefault();
+                document.querySelector(a.getAttribute('href')).scrollIntoView({behavior:'smooth'});
+            });
+        });
+    </script>
+</body>
+</html>
